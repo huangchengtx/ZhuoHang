@@ -442,6 +442,7 @@ ul{margin:0;padding:0;list-style-type:none}
     border: 1px solid #eaeaea;
     border-radius: 0;
     point-events: none;
+    z-index: -999;
 }
 #goods .hidden {
     display: none;
