@@ -1,5 +1,5 @@
 # 卓航许愿池
-This is a wish into the well
+移动端模式效果更佳
 
 [found.html](/found.html/)
 
