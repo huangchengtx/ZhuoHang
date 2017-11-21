@@ -4,14 +4,15 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no">
 	<meta name="format-detection" content="telephone=no">
-	<title>开奖后</title>
+	<title>参与后</title>
 	<link href="css/02.css" rel="stylesheet">
+    <script src="js/jquery.min.js"></script>
 </head>
 <header class="BNJS-title-bar theme-app">
 	<div class="j-title">
 		<div class="title-text">商品详情</div>
 		<div class="title-btns">
-			<span class="j-back back-btn" onclick="javascript:history.back(-1);">
+			<span class="j-back back-btn" onclick="javascript:history.back(-1)">
 				<i class="btn-icon icon-back"></i>
 			</span>
 		</div>
@@ -60,7 +61,7 @@
 						<div class="details">
 							<div>
 								<ul class="wiList card">
-									<li><a>
+									<li><a href="details.html">
 										<i class="icon pDetails"></i><!-- react-text: 2076 -->商品详情<!-- /react-text -->
 										<span class="right arrowRight">
 											<i class="icon icon-arrow"></i>
@@ -72,51 +73,13 @@
 											<i class="icon icon-arrow"></i>
 										</span>
 									</a></li>
+									<li  class="baoxin_down5" onMouseDown="open_div2()" style="font-size:1rem;">
+										<i class="icon tCaption"></i><!-- react-text: 2089 -->我的许愿码<!-- /react-text -->
+										<span class="right arrowRight">
+											<i class="icon icon-arrow"></i>
+										</span>
+									</li>
 								</ul>
-							</div>
-						</div>
-						<div class="good-records">
-							<div class="hd">
-								<span class="issue">
-									<i class="icon icon-calendar"></i><!-- react-text: 689 -->期号: <!-- /react-text --><!-- react-text: 690 -->703030324271<!-- /react-text -->
-								</span>
-							</div>
-							<div class="bd">
-								<div class="lucky-dog">
-									<div class="avatar">
-										<span class="layzr-bg fade-in" data-layzr-bg="true" style="background-image: url(images/customer.jpg);"></span>
-									</div>
-									<ul class="metas">
-										<li>
-											<span class="t">中 奖 者：</span>
-											<span class="con">m****运</span>
-										</li>
-										<li>
-											<span class="t">用 户 IP：</span>
-											<span class="con">183.42.46.105</span>
-										</li>
-										<li>
-											<span class="t">手机号码：</span>
-											<span class="con">134****0117</span>
-										</li>
-										<li>
-											<span class="t">本期参与：</span>
-											<span class="con"><em>37</em><!-- react-text: 717 -->人次<!-- /react-text --></span>
-										</li>
-										<li>
-											<span class="t">总需人次：</span>
-											<span class="con"><em>100</em><!-- react-text: 722 -->人次<!-- /react-text --></span>
-										</li>
-										<li>
-											<span class="t">揭晓时间：</span>
-											<span class="con">2017-03-03 10:16:00</span>
-										</li>
-									</ul>
-								</div>
-								<div class="lucky-number">
-									<!-- react-text: 2817 -->幸运号码：<!-- /react-text --><!-- react-text: 2818 -->10000017<!-- /react-text -->
-									<a class="jump-link" href="calculate.html">查看计算详情&gt;</a>
-								</div>
 							</div>
 						</div>
 					</div>
@@ -159,5 +122,30 @@
 			</div>
 		</div>
 	</section>
+<script type="text/javascript">
+//弹开层选择0907
+	function  open_div2(){
+	 document.getElementById("detail_divtop2").style.display="block";
+	 document.getElementById("di2").style.display="block";
+	}
+	
+	function  close_div2(){
+	 document.getElementById("detail_divtop2").style.display="none";
+	 document.getElementById("di2").style.display="none";
+	
+	}  
+	
+</script> 
+    
+<!--我的许愿码-->
+<div id="di2" class="backbg"></div>
+<div id="detail_divtop2" class="NumberBox" >
+	<div class="title">我的许愿码</div>
+	<div class="number">
+    	<span>232525</span><span>232526</span><span>232527</span><span>232528</span><span>232529</span>
+	</div>
+	<div class="NumberBtn" onmousedown="close_div2()">确 定</div>
+</div>
+
 </body>
 </html>

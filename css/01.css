@@ -324,6 +324,7 @@ ul{margin:0;padding:0;list-style-type:none}
 #goods.pic .box .top {
     position: relative;
     width: 100%;
+    z-index: 999;
 }
 #goods.pic .box .top img {
     width: 100%;
@@ -430,6 +431,7 @@ ul{margin:0;padding:0;list-style-type:none}
     border-radius: 0.33333rem;
     padding: 7.5px 0;
     line-height: 1;
+    z-index: 999;
 }
 #goods.pic .box .box-container:after {
     content: "";
@@ -442,7 +444,6 @@ ul{margin:0;padding:0;list-style-type:none}
     border: 1px solid #eaeaea;
     border-radius: 0;
     point-events: none;
-    z-index: -999;
 }
 #goods .hidden {
     display: none;

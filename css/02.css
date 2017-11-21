@@ -70,6 +70,9 @@ address, caption, cite, code, dfn, em, i, th, var {font-style: normal;font-weigh
 .BNJS-title-bar .back-btn {
     float: left;
 }
+.BNJS-title-bar .right-btn {
+    float: right;
+}
 .BNJS-title-bar .back-btn, .BNJS-title-bar .right-btn {
     position: relative;
     box-sizing: border-box;
@@ -90,6 +93,9 @@ address, caption, cite, code, dfn, em, i, th, var {font-style: normal;font-weigh
     background-image: url(../images/back-btn.png);
     -webkit-transform: rotate(90deg);
     transform: rotate(90deg);
+}
+.BNJS-title-bar .right-back {
+    background-image: url(../images/call-btn.png);
 }
 .BNJS-title-bar a, .BNJS-title-bar abbr, .BNJS-title-bar address, .BNJS-title-bar b, .BNJS-title-bar blockquote, .BNJS-title-bar cit, .BNJS-title-bar code, .BNJS-title-bar dd, .BNJS-title-bar del, .BNJS-title-bar dfn, .BNJS-title-bar dl, .BNJS-title-bar dt, .BNJS-title-bar em, .BNJS-title-bar fieldset, .BNJS-title-bar h1, .BNJS-title-bar h2, .BNJS-title-bar h3, .BNJS-title-bar h4, .BNJS-title-bar h5, .BNJS-title-bar h6, .BNJS-title-bar hr, .BNJS-title-bar i, .BNJS-title-bar ins, .BNJS-title-bar label, .BNJS-title-bar legend, .BNJS-title-bar li, .BNJS-title-bar ol, .BNJS-title-bar p, .BNJS-title-bar pre, .BNJS-title-bar q, .BNJS-title-bar samp, .BNJS-title-bar small, .BNJS-title-bar strong, .BNJS-title-bar sub, .BNJS-title-bar sup, .BNJS-title-bar ul {
     border: 0;
@@ -227,11 +233,11 @@ address, caption, cite, code, dfn, em, i, th, var {font-style: normal;font-weigh
     top: -.48rem;
     left: 0;
     padding: 0 .36rem;
-    font-size: .2rem;
-    /*line-height: .8rem;*/
+    /*font-size: .2rem;*/
+    line-height: 1rem;
     color: #f26d5f;
     background-color: #fff;
-    border: .12rem solid #f26d5f;
+    border: 1px solid #f26d5f;
     border-radius: 1.16rem;
 }
 .introduce .progress-wrap .txt {
@@ -305,8 +311,8 @@ address, caption, cite, code, dfn, em, i, th, var {font-style: normal;font-weigh
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    height: 2.88rem;
-    line-height: 2.88rem;
+    height: 2.4rem;
+    line-height: 2.4rem;
     border-top: 1px solid #e6e6e6;
     background-color: #fff;
     z-index: 99;
@@ -318,10 +324,45 @@ address, caption, cite, code, dfn, em, i, th, var {font-style: normal;font-weigh
     display: block;
     padding: 0;
     width: 2.1rem;
-    font-size: 1.2rem;
-    line-height: 2.88rem;
+    font-size: 1rem;
+    line-height: 2.4rem;
     border-radius: 0;
     border: none;
+}
+.container .flex {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 2.4rem;
+    line-height: 2.4rem;
+    border-top: 1px solid #e6e6e6;
+    background-color: #fff;
+    z-index: 100;
+}
+.container .flex .btn.full {
+    width: 100%;
+}
+.container .flex .btn {
+    display: block;
+    padding: 0;
+    width: 2.1rem;
+    font-size: 1rem;
+    line-height: 2.4rem;
+    border-radius: 0;
+    border: none;
+}
+.container .flex .btn:link {
+    background: #ff8200;
+}
+.container .flex .btn:visited {
+    background: #aaa;
+}
+.container .flex .btn:hover {
+    background: #ff8200;
+}
+.container .flex .btn:active {
+    background: #aaa;
 }
 .btn.full {
     display: block;
@@ -353,10 +394,11 @@ address, caption, cite, code, dfn, em, i, th, var {font-style: normal;font-weigh
     position: fixed;
     top: 0;
     left: 0;
-    bottom: 2.88rem;
+    bottom: 0;
     width: 100%;
     background-color: rgba(0,0,0,.6);
     z-index: 100;
+    display: none;
 }
 .buy-layer .container {
     position: absolute;
@@ -657,8 +699,13 @@ ol, ul {
 }
 .lucky-number .jump-link {
     float: right;
-    color: #507daf;
-    /*font-size: .24rem;*/
+    color: #fff;
+    text-decoration: underline;
+}
+.lucky-number {
+    background: #f46200;
+    color: #fff;
+    padding: 6px;
 }
 
 
@@ -713,6 +760,62 @@ ol, ul {
 .goods-probability .botip {
     text-align: center;
     font-size: .2rem;
+}
+
+
+
+/*****************我的许愿码******************/
+.backbg{
+    background:#000;
+    width:100%;
+    height:100%;
+    z-index:999;
+    position: fixed;
+    top:0;
+    left:0;
+    filter:alpha(opacity=50);
+    -moz-opacity:0.5;
+    -khtml-opacity: 0.5;
+    opacity: 0.5;
+    display:none;
+}
+.NumberBox{
+    width:80%;
+    text-align:center;
+    position:fixed;
+    top:50%;
+    left:50%;
+    margin:-40%;
+    font-size:1rem;
+    border-radius:0.5rem;
+    line-height:1.8rem;
+    background-color:#fff;
+    background-image:url(../images/bg.png);
+    z-index:1000;
+    display:none;
+}
+.NumberBox .title{
+    font-size: 1rem;
+    line-height: 2.4rem;
+}
+.NumberBox .number{
+    overflow-y: auto;
+    width: 100%;
+    min-height: 6rem;
+    max-height: 14rem;
+}
+.NumberBox .number span{
+    display:inline-block;
+    padding:0 0.8rem;
+}
+.NumberBox .NumberBtn{
+    width: 60%;
+    line-height: 2rem;
+    color: #fff;
+    font-size: 1rem;
+    border-radius: 6px;
+    background: #f26d5f;
+    margin: 12px auto;
 }
 
 

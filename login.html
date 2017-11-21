@@ -1,0 +1,72 @@
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no"/>
+        
+        <meta name="data-spm" content="a215s">
+        <meta content="yes" name="apple-mobile-web-app-capable">
+        <meta content="telephone=no,email=no" name="format-detection">
+        <meta name="App-Config" content="fullscreen=yes,useHistoryState=yes,transition=yes">
+        
+		<title>登录</title>
+		<link rel="stylesheet" href="css/main.css"/>
+        <link rel="stylesheet" href="css/content.css"/>
+        <link rel="stylesheet" href="css/01.css">
+		  <script src="js/jquery.min.js"></script>
+          <script src="js/resize.js"></script>
+          <script src="js/quan.js"></script>
+
+</head>
+<header class="BNJS-title-bar theme-app">
+  <div class="j-title">
+    <div class="title-text">登录</div>
+    <div class="title-btns">
+      <span class="j-back back-btn" onclick="javascript:history.back(-1)">
+        <i class="btn-icon icon-back"></i>
+      </span>
+    </div>
+  </div>
+</header>
+<body>
+<!--main-->
+<div  class="mainbox3">
+          <!--1-->
+         <div class="x_fabuquan clearfloat">
+            <input name="" type="text"  style="width:100%;padding:0 0.2rem;" class="x_faquan_inp" value="请输入您的手机号码"onfocus="if(this.value == this.defaultValue) {this.value = '';}this.style.color='#222';" onBlur="if(this.value == '') {this.value = this.defaultValue;this.style.color='#999';}">
+         </div>
+         <!--1 end-->
+         
+          <!--1-->
+         <div class="x_fabuquan clearfloat">
+            <input name="" type="text"  style="padding:0 0.2rem;" class="x_faquan_inp left" value="请输入您的验证码"onfocus="if(this.value == this.defaultValue) {this.value = '';}this.style.color='#222';" onBlur="if(this.value == '') {this.value = this.defaultValue;this.style.color='#999';}">
+            <a href="#" class="right x_duihuan_yan">获取验证码</a>
+         </div>
+         <!--1 end-->
+     
+        <div class=" txt-align">
+           <input name="" type="submit" class="x_fabuquan_btn font26" value="登录"  onMouseDown="open_div2()">
+        </div>
+</div>
+<!--main end-->
+<script type="text/javascript">
+//弹开层选择0907
+  function  open_div2(){
+   document.getElementById("detail_divtop2").style.display="block";
+   document.getElementById("di2").style.display="block";
+  }
+  
+  function  close_div2(){
+   document.getElementById("detail_divtop2").style.display="none";
+   document.getElementById("di2").style.display="none";
+  
+  }  
+  
+</script>
+<!--弹开层2-->
+<div id="di2" class="backbg"  onmousedown="close_div2()"></div>
+<div id="detail_divtop2" class="ceng_txtbox" >
+    验证码不正确
+</div>
+<!--弹开层2 end-->
+</body>
+</html>

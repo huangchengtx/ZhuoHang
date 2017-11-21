@@ -1,0 +1,66 @@
+/* CSS Document */
+.left {float:left;}
+.right {float:right;}
+/*清除浮动代码*/ 
+.clearfloat:after{display:block;clear:both;content:"";visibility:hidden;height:0} 
+.clearfloat{zoom:1} 
+
+.red{color:#f40b28;}
+
+.font18{font-size:0.18rem;}
+.font20{font-size:0.2rem;}
+.font22{font-size:0.22rem;}
+.font24{font-size:0.24rem;}
+.font26{font-size:0.26rem;}
+.font28{font-size:0.28rem;}
+.font30{font-size:0.30rem;}
+.font32{font-size:0.32rem;}
+.font35{font-size:0.35rem;}
+.font45{font-size:0.45rem;}
+.font55{font-size:0.55rem;}
+
+.padd_t20{padding-top:0.20rem;}
+.m_t20{margin-top:0.20rem;}
+
+.hd_box{width:100%;height:2.3rem; text-align:center; background:#fff; position:relative;}
+.hd_box img{width:60%;height:100%;}
+.hd_txtbox{ background:#000;height:0.84rem; width:100%; position:absolute; bottom:0;left:0;
+filter:alpha(opacity=40);  /*支持 IE 浏览器*/
+-moz-opacity:0.40; /*支持 FireFox 浏览器*/
+opacity:0.40;  /*支持 Chrome, Opera, Safari 等浏览器*/}
+.hd_txtbox2{ height:0.74rem; width:100%; position:absolute; bottom:0;left:0;color:#fff; text-align:left;}
+.hd_butn{ background:#fff;padding:0.08rem 0.2rem; background:#f40b28;color:#fff;border-radius:0.05rem;position:absolute; bottom:0.2rem;right:0.2rem;}
+
+.hd_txtbt{ background:#fff;height:0.6rem;padding:0 0.3rem;line-height:0.6rem;border-bottom:1px solid #dcdcdc;}
+.hd_mainbox{/*width:95%;*/margin:auto;padding:0.2rem 0;font-family:"微软雅黑", "helvetica neue",tahoma,"hiragino sans gb",stheiti,"wenquanyi micro hei",\5FAE\8F6F\96C5\9ED1,\5B8B\4F53,sans-serif; }
+
+.hd_nax{ background:#fff;}
+
+/*qiehuan-2保险详细页面的切换*/
+#baoxianBlock {
+    width:100%;over-flow:hidden;    
+}
+#baoxianBlock h4{min-width:50%;}
+#baoxianBlock h4.menuNo {line-height:0.6rem;color:#333; height:0.6rem;text-align:center;font-size:0.22rem;border-bottom:3px solid #fff; background:#fff;
+  
+}
+#baoxianBlock h4.menuOn {
+   color:#f40b28; display:block;  font-weight:bold;height:0.6rem;line-height:0.6rem;text-align:center;font-size:0.22rem;background:#fff;border-bottom:3px solid #f40b28;
+}
+#baoxianBlock DIV.baoxianList_none {
+    display:none
+}
+#baoxianBlock DIV.baoxianList {
+    margin:0px;
+}
+
+.x_baoxian_nax{height:0.63rem;width:100%;z-index:11;display:-webkit-box; text-align:center; font-size:0.26rem;padding:0 0.05rem; }
+a.x_baoxian_a:link{ /*border:1px solid #01b9c5; border-radius:0.05rem;*/padding:0 0.05rem;color:#01b9c5;}
+a.x_baoxian_a:visited{ /*border:1px solid #01b9c5; border-radius:0.05rem;*/padding:0 0.05rem;color:#01b9c5;}
+
+.x_baoxian_list{border-bottom:1px solid #dcdcdc;height:0.6rem;line-height:0.75rem;padding:0rem 0.3rem; background:#fff;}
+.x_baoxian_line{border-bottom:1px solid #dcdcdc;}
+.x_baoxian_listbox{padding:0.2rem 0.3rem;}
+
+
+

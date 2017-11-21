@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en" class="BNJS-body-with-title-bar">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no">
+	<meta name="format-detection" content="telephone=no">
+	<title>我的活动</title>
+	<link href="css/01.css" rel="stylesheet">
+    <link href="css/02.css" rel="stylesheet">
+    <link href="css/03.css" rel="stylesheet">
+        <script src="js/jquery.min.js"></script>
+        <script src="js/resize.js"></script>
+        <script src="js/db.js"></script>
+</head>
+<header class="BNJS-title-bar theme-app">
+	<div class="j-title">
+		<div class="title-text">我的活动</div>
+		<div class="title-btns">
+			<span class="j-back back-btn" onclick="javascript:history.back(-1)">
+				<i class="btn-icon icon-back"></i>
+			</span>
+            <span class="j-back right-btn">
+                <i class="btn-icon right-back"></i>
+            </span>
+		</div>
+	</div>
+</header>
+<body>
+
+<div id="baoxianBlock">
+        <!--nax-->
+        <div  class="x_baoxian_nax">
+                <h4 class="menuOn flex1" id="tod1" onMouseOver="switchtodTag('tod','baoxianList','1');this.blur();">
+                     正在参与
+                </h4>
+                <h4 class="menuNo flex1" id="tod2" onMouseOver="switchtodTag('tod','baoxianList','2');this.blur();">
+                    已开奖
+                </h4>
+        </div>
+        <!--nax end-->
+        <!--a-->
+        <div class="baoxianList" id="baoxianList1">
+                <!--1-->
+                <div class="hd_mainbox">
+                        <div class="clearfloat font24 hd_txtbt">
+                            <span class="left">参与流水号:34535</span>
+                            <span class="right">参与份数 <b class="red">5</b> 份</span>
+                        </div>
+                        <div class="hd_box" onClick="window.location.href='later.html'">
+                            <img src="images/good-big.jpg">
+                            <div class="hd_txtbox"></div>
+                            <div class="hd_txtbox2">
+                                 <ul class="font22">
+                                       <li class="font26">【期数】产品名称</li>
+                                       <li>距离开奖时间还有:  0分23秒</li>
+                                 </ul>
+                            </div>
+                        </div>
+                </div>
+                <!--1 end-->
+        </div>
+        <!--a end-->
+        <!--b-->
+        <div class="baoxianList_none" id="baoxianList2">
+               <!--1-->
+                <div class="hd_mainbox">
+                        <div class="clearfloat font24 hd_txtbt">
+                            <span class="left">参与流水号:34535</span>
+                            <span class="right">参与份数 <b class="red">5</b> 份</span>
+                        </div>
+                        <div class="hd_box" onClick="window.location.href='after.html'">
+                            <img src="images/good-big.jpg">
+                            <div class="hd_txtbox"></div>
+                            <div class="hd_txtbox2">
+                                 <ul class="font22">
+                                       <li class="font26">【期数】产品名称</li>
+                                       <li class="clearfloat"><span class="left">开奖号码：223532234</span></li>
+                                 </ul>
+                            </div>
+                            <b class="right hd_butn font24">中奖状态</b>
+                        </div>
+                </div>
+                <!--1 end-->
+        </div>
+        <!--b end-->
+</div>
+</body>
+</html>
